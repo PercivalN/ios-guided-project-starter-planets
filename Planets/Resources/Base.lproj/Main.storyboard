@@ -11,32 +11,46 @@
         <!--Settings-->
         <scene sceneID="iL2-5h-nKi">
             <objects>
-                <viewController title="Settings" id="z8H-Xa-7Na" sceneMemberID="viewController">
+                <viewController title="Settings" modalPresentationStyle="fullScreen" id="z8H-Xa-7Na" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSb-Te-Oer">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-EU-y8D">
+                                <rect key="frame" x="345" y="160" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-Wn-fMK">
+                                <rect key="frame" x="20" y="165" width="305" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vhe-Wn-fMK" firstAttribute="leading" secondItem="hGs-XI-kpk" secondAttribute="leading" constant="20" id="LnG-LU-NCK"/>
+                            <constraint firstItem="vtW-EU-y8D" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Vhe-Wn-fMK" secondAttribute="trailing" constant="20" id="UGj-F8-V6v"/>
+                            <constraint firstItem="hGs-XI-kpk" firstAttribute="trailing" secondItem="vtW-EU-y8D" secondAttribute="trailing" constant="20" id="WkI-4b-qxU"/>
+                            <constraint firstItem="vtW-EU-y8D" firstAttribute="top" secondItem="hGs-XI-kpk" secondAttribute="top" constant="20" id="bEX-q5-mEI"/>
+                            <constraint firstItem="Vhe-Wn-fMK" firstAttribute="centerY" secondItem="vtW-EU-y8D" secondAttribute="centerY" id="z1s-Xe-SaX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hGs-XI-kpk"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bxK-JC-5qB"/>
-                        <barButtonItem systemItem="done" id="CV6-1l-i6N">
-                            <connections>
-                                <action selector="unwindToPlanetsCollectionViewController" destination="bHc-6A-0kc" id="RqK-95-uBK"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Q8Y-u2-4iA"/>
+                        <barButtonItem systemItem="done" id="Q5J-FY-EC8"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="RVv-Fw-RqJ"/>
+                    <navigationItem key="navigationItem" title="Settings" id="RVv-Fw-RqJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHc-6A-0kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2361" y="-431"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Planet Collection View Controller-->
         <scene sceneID="B8v-sZ-pGv">
             <objects>
-                <collectionViewController id="Rp3-Vl-Yse" sceneMemberID="viewController">
+                <collectionViewController id="Rp3-Vl-Yse" customClass="PlanetCollectionViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kGH-Ps-VVT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,20 +138,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDA-Ql-g4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="168.75"/>
+            <point key="canvasLocation" x="93" y="169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cll-nF-k5C">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="ry5-T1-idV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" toolbarHidden="NO" id="ry5-T1-idV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="YW1-Jy-dpZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Za-Gq-tLS">
-                        <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
