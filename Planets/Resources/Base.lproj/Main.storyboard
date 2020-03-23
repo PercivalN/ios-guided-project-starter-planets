@@ -11,13 +11,16 @@
         <!--Settings-->
         <scene sceneID="iL2-5h-nKi">
             <objects>
-                <viewController title="Settings" modalPresentationStyle="fullScreen" id="z8H-Xa-7Na" sceneMemberID="viewController">
+                <viewController title="Settings" modalPresentationStyle="fullScreen" id="z8H-Xa-7Na" customClass="SettingsViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSb-Te-Oer">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-EU-y8D">
                                 <rect key="frame" x="345" y="160" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeShouldShowPluto:" destination="z8H-Xa-7Na" eventType="valueChanged" id="8g0-Aq-5pc"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-Wn-fMK">
                                 <rect key="frame" x="20" y="165" width="305" height="21"/>
@@ -42,6 +45,9 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Settings" id="RVv-Fw-RqJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="vtW-EU-y8D" id="2ra-fu-fuy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHc-6A-0kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,10 +11,19 @@ import UIKit
 class PlanetCollectionViewController: UICollectionViewController {
     
     
-    
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    // MARK: - Properties
     let planetController = PlanetController()
 
-
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    // MARK: - View Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        collectionView.reloadData()
+    }
+    
+    
     // MARK: UICollectionViewDataSource
 
 

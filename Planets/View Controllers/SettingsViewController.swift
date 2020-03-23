@@ -25,16 +25,14 @@ class SettingsViewController: UIViewController {
 	// MARK: - Actions
 
 	@IBAction func changeShouldShowPluto(_ sender: UISwitch){
-		// area on the phone where one can store key value items
 		let userDefaults = UserDefaults.standard
-		//associating ShouldShowPluto to the key in the UserDefaults area on the phone
-		userDefaults.set(sender.isOn, forKey: .shouldShowPlutoKey)
+		userDefaults.set(sender.isOn, forKey: "ShouldShowPluto")
 	}
 
 	// MARK: - Private
 
 	private func updateViews() {
 		let userDefaults = UserDefaults.standard
-		shouldShowPlutoSwitch.isOn = userDefaults.bool(forKey: .shouldShowPlutoKey)
+		shouldShowPlutoSwitch.isOn = userDefaults.bool(forKey: "ShouldShowPluto")
 	}
 }
