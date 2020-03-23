@@ -10,8 +10,7 @@ import Foundation
 
 class PlanetController {
 	// convert to a computed property
-	var planets: [Planet] {
-		var result = [
+	var planets = [
         	Planet(name: "Mercury", imageName: "mercury"),
         	Planet(name: "Venus", imageName: "venus"),
         	Planet(name: "Earth", imageName: "earth"),
@@ -22,12 +21,4 @@ class PlanetController {
         	Planet(name: "Neptune", imageName: "neptune"),
         ]
 
-		// Put in logic to add Pluto to the array or now
-		let shouldShowPluto = UserDefaults.standard.bool(forKey: .shouldShowPlutoKey)
-		if shouldShowPluto {
-			result.append(Planet(name: "Pluto", imageName: "pltuo"))
-		}
-
-		return result
-	}
 }

@@ -62,7 +62,7 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="jPd-Ft-LsE">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="jPd-Ft-LsE" customClass="PlanetCollectionViewCell" customModule="Planets" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -78,7 +78,7 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="MA8-DX-G8o">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="119.5"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-Vi-o4m">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Planets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-Vi-o4m">
                                                             <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -103,6 +103,10 @@
                                     <constraint firstItem="HQp-qK-fJ3" firstAttribute="leading" secondItem="jPd-Ft-LsE" secondAttribute="leading" id="cv0-hT-aHI"/>
                                     <constraint firstAttribute="bottom" secondItem="HQp-qK-fJ3" secondAttribute="bottom" id="wdm-dg-l8g"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="MA8-DX-G8o" id="LFc-hg-ioP"/>
+                                    <outlet property="textlLabel" destination="tXE-Vi-o4m" id="tfW-2u-j7H"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

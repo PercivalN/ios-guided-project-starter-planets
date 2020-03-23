@@ -14,9 +14,9 @@
 		9DDBBD19211360D100A55978 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD18211360D100A55978 /* Planet.swift */; };
 		9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD1E211360F500A55978 /* PlanetController.swift */; };
 		DDE70095230F053C00D7B057 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE70094230F053C00D7B057 /* SettingsViewController.swift */; };
-		DDE70097230F05F900D7B057 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE70096230F05F900D7B057 /* PlanetsCollectionViewController.swift */; };
 		DDE7009C230F074500D7B057 /* PlanetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE7009B230F074500D7B057 /* PlanetCollectionViewController.swift */; };
 		DDE7009F230F0E7E00D7B057 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE7009E230F0E7E00D7B057 /* SettingsKeys.swift */; };
+		E3C447002426B53700014ADF /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C446FF2426B53700014ADF /* PlanetCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		9DDBBD18211360D100A55978 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9DDBBD1E211360F500A55978 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 		DDE70094230F053C00D7B057 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DDE70096230F05F900D7B057 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
-		DDE7009B230F074500D7B057 /* PlanetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanetCollectionViewController.swift; path = ../PlanetCollectionViewController.swift; sourceTree = "<group>"; };
+		DDE7009B230F074500D7B057 /* PlanetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewController.swift; sourceTree = "<group>"; };
 		DDE7009E230F0E7E00D7B057 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
+		E3C446FF2426B53700014ADF /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		27F670EB21EFC6AA0035C1BF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DDE70096230F05F900D7B057 /* PlanetsCollectionViewController.swift */,
+				DDE7009B230F074500D7B057 /* PlanetCollectionViewController.swift */,
 				DDE70094230F053C00D7B057 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
@@ -114,7 +114,7 @@
 		DDE7009D230F07BB00D7B057 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DDE7009B230F074500D7B057 /* PlanetCollectionViewController.swift */,
+				E3C446FF2426B53700014ADF /* PlanetCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 				DDE7009C230F074500D7B057 /* PlanetCollectionViewController.swift in Sources */,
 				9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */,
 				DDE7009F230F0E7E00D7B057 /* SettingsKeys.swift in Sources */,
-				DDE70097230F05F900D7B057 /* PlanetsCollectionViewController.swift in Sources */,
+				E3C447002426B53700014ADF /* PlanetCollectionViewCell.swift in Sources */,
 				9DDBBD072113609700A55978 /* AppDelegate.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
 				DDE70095230F053C00D7B057 /* SettingsViewController.swift in Sources */,
