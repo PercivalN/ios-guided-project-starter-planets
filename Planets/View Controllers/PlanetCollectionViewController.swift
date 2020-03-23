@@ -25,8 +25,6 @@ class PlanetCollectionViewController: UICollectionViewController {
     
     
     // MARK: UICollectionViewDataSource
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return planetController.planets.count
     }
@@ -41,6 +39,8 @@ class PlanetCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
+    @IBAction func unwindToPlanetsCollectionViewController(_ sender: UIStoryboardSegue) {}
 
     
 

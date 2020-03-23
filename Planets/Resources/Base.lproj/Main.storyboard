@@ -41,7 +41,11 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Q8Y-u2-4iA"/>
-                        <barButtonItem systemItem="done" id="Q5J-FY-EC8"/>
+                        <barButtonItem systemItem="done" id="Q5J-FY-EC8">
+                            <connections>
+                                <segue destination="bNk-dA-xJR" kind="unwind" unwindAction="unwindToPlanetsCollectionViewController:" id="wGI-m0-Dzc"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Settings" id="RVv-Fw-RqJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -50,6 +54,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHc-6A-0kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bNk-dA-xJR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2361" y="-431"/>
         </scene>

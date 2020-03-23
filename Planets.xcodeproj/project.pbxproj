@@ -75,11 +75,11 @@
 			children = (
 				9DDBBD062113609700A55978 /* AppDelegate.swift */,
 				DDE7009E230F0E7E00D7B057 /* SettingsKeys.swift */,
-				9DDBBD1B211360DA00A55978 /* Resources */,
 				27F670EB21EFC6AA0035C1BF /* View Controllers */,
 				9DDBBD1A211360D500A55978 /* Model */,
 				9DDBBD1C211360E000A55978 /* Model Controller */,
 				DDE7009D230F07BB00D7B057 /* Views */,
+				9DDBBD1B211360DA00A55978 /* Resources */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
